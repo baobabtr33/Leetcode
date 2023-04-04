@@ -1,6 +1,5 @@
 class Solution:
     def convert(self, s: str, num_rows: int) -> str:
-        # i, r -> 0 * (r - 1) + i, 2 * (r - 1) - i, 2 * (r - 1) + i, 4 * (r - 1) - i, 4 * (r - 1) + i, ....
         def i_row_indices(i: int, r: int) -> Iterator[int]:
             if r == 1: yield from count(i)
             
